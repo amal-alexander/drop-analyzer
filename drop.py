@@ -16,6 +16,12 @@ st.markdown("""
    - Subsequent columns should contain traffic data for different dates or months.
 3. **Data Format**: Ensure that the traffic data columns contain numeric values.
 
+### Example Format
+| Page Name | Jan 2023 | Feb 2023 | Mar 2023 |
+|-----------|----------|----------|----------|
+| Page A    | 100      | 150      | 120      |
+| Page B    | 200      | 180      | 160      |
+
 ### How to Use
 - Use the sidebar to select the date range and set thresholds for traffic drop and gain.
 - View the analysis results in the main area, including traffic trends and alerts.
