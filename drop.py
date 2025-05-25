@@ -7,6 +7,21 @@ import numpy as np
 st.set_page_config(page_title="📉 Traffic Drop Analyzer", layout="wide")
 st.title("📉 Traffic Drop Analyzer")
 
+# --- Instructions for Users ---
+st.markdown("""
+## Instructions
+1. **Upload a File**: Please upload a CSV or Excel file containing your traffic data.
+2. **Required Columns**:
+   - The first column should contain page names or identifiers.
+   - Subsequent columns should contain traffic data for different dates or months.
+3. **Data Format**: Ensure that the traffic data columns contain numeric values.
+
+### How to Use
+- Use the sidebar to select the date range and set thresholds for traffic drop and gain.
+- View the analysis results in the main area, including traffic trends and alerts.
+- Download reports and charts using the provided buttons.
+""")
+
 # --- Safe column name cleaner ---
 def deduplicate_columns(columns):
     seen = {}
